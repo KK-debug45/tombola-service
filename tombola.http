@@ -1,0 +1,13 @@
+### 1. Crea Nuova Partita (POST)
+# Dopo l'esecuzione, copia l'ID della Partita dalla risposta
+POST http://localhost:8080/api/partite
+Content-Type: application/json
+
+### 2. Estrai Primo Numero (POST)
+# Sostituisci {ID_PARTITA} con l'ID copiato dal test 1
+POST http://localhost:8080/api/partite/cc98ae5c-c421-46e0-b668-d43987af670d/estrai
+Content-Type: application/json
+
+### 3. Controlla Stato Partita (GET)
+# Sostituisci {ID_PARTITA} con l'ID copiato
+GET http://localhost:8080/api/partite/cc98ae5c-c421-46e0-b668-d43987af670d
